@@ -1,7 +1,7 @@
 import { User, TokenResponse, Family, Task, FamilyDetail } from '../types';
 import axios, { AxiosRequestConfig, InternalAxiosRequestConfig, AxiosRequestHeaders } from "axios";
 
-const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:8000';
+const API_URL = process.env.REACT_APP_API_URL || 'http://213.171.30.203:8000';
 
 const getToken = (): string => {
   return localStorage.getItem("token") ?? "";

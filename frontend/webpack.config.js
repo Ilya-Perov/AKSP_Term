@@ -40,7 +40,7 @@ plugins: [
 
   // 👇 ДОБАВЬ ЭТО
   new webpack.DefinePlugin({
-    'process.env.REACT_APP_API_URL': JSON.stringify(process.env.REACT_APP_API_URL || 'http://localhost:8000'),
+    'process.env.REACT_APP_API_URL': JSON.stringify(process.env.REACT_APP_API_URL || 'http://213.171.30.203:8000'),
   }),
 ],
 
@@ -51,7 +51,7 @@ plugins: [
     hot: true,
     proxy: {
       '/api': {
-        target: 'http://localhost:8000',
+        target: 'http://213.171.30.203:8000',
         pathRewrite: { '^/api': '/api' },
       },
     },
